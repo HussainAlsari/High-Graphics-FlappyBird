@@ -28,6 +28,13 @@
   @keyframes blink{0%,55%{opacity:1}56%,100%{opacity:.12}}
   #lens{position:fixed;bottom:calc(4.5vh + 12px);right:20px;z-index:5;
     font:400 10px/1 'IBM Plex Mono',monospace;letter-spacing:.14em;color:var(--cream-dim);}
+    #supportLink{position:fixed;left:20px;bottom:calc(4.5vh + 8px);z-index:7;display:inline-flex;align-items:center;gap:7px;
+    padding:8px 11px;border:1px solid rgba(242,227,192,.25);border-radius:999px;background:rgba(18,9,4,.55);
+    color:var(--cream-dim);font:500 9px/1 'IBM Plex Mono',monospace;letter-spacing:.04em;text-decoration:none;
+    backdrop-filter:blur(3px);transition:color .2s ease,border-color .2s ease,background .2s ease;}
+  #supportLink:hover,#supportLink:focus-visible{color:var(--cream);border-color:rgba(242,227,192,.7);background:rgba(18,9,4,.82);}
+  #supportLink:focus-visible{outline:2px solid var(--cream);outline-offset:3px;}
+  body.playing #supportLink{display:none;}
 
   #score{position:fixed;top:calc(4.5vh + 14px);left:50%;transform:translateX(-50%);z-index:5;
     font:600 clamp(30px,4.5vh,42px)/1 'Fraunces',serif;color:var(--cream);letter-spacing:.06em;
@@ -131,6 +138,7 @@
 
 <div id="osd"><span class="dot"></span><span>REC</span><span id="tc">00:00:00:00</span><span>24 FPS</span></div>
 <div id="lens">CAM A · 24MM · T2.0</div>
+<a id="supportLink" href="https://buymeacoffee.com/xpxxxu" target="_blank" rel="noopener noreferrer">☕ Buy me a coffee</a>
 <div id="score">0</div>
 <div id="caption"></div>
 
