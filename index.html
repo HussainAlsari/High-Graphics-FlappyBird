@@ -33,9 +33,8 @@
     color:var(--cream-dim);font:500 9px/1 'IBM Plex Mono',monospace;letter-spacing:.04em;text-decoration:none;
     backdrop-filter:blur(3px);transition:color .2s ease,border-color .2s ease,background .2s ease;}
   #supportLink:hover,#supportLink:focus-visible{color:var(--cream);border-color:rgba(242,227,192,.7);background:rgba(18,9,4,.82);}
-  #supportLink:focus-visible{outline:2px solid var(--cream);outline-offset:3px;}
-  body.playing #supportLink{display:none;}
-  #cover:not(.off)~#supportLink{display:none;}
+  #supportLink:focus-visible{outline:2px solid var(--cream);outline-offset:3px;}  body.playing #supportLink{display:none;}
+  #cover:not([style*="display: none"])~#supportLink{display:none;}
 
   #score{position:fixed;top:calc(4.5vh + 14px);left:50%;transform:translateX(-50%);z-index:5;
     font:600 clamp(30px,4.5vh,42px)/1 'Fraunces',serif;color:var(--cream);letter-spacing:.06em;
