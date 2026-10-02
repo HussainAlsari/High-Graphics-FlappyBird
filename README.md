@@ -34,7 +34,7 @@
  ### Option B — Play Online
 
  **Live:**\
- https://xpxxxu.github.io/High-Graphics-FlappyBird/
+https://hussainalsari.github.io/High-Graphics-FlappyBird/
 
  > **Note:** Requires a modern browser such as Chrome, Edge, Firefox, or Safari 16.4+, plus an internet connection on first load to fetch `three.js` and the bird model from CDN.
 >
