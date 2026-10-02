@@ -138,7 +138,7 @@
 
 <div id="osd"><span class="dot"></span><span>REC</span><span id="tc">00:00:00:00</span><span>24 FPS</span></div>
 <div id="lens">CAM A · 24MM · T2.0</div>
-<a id="supportLink" href="https://buymeacoffee.com/xpxxxu" target="_blank" rel="noopener noreferrer">☕ Buy me a coffee</a>
+<a id="supportLink" href="https://buymeacoffee.com/xpxxxu" target="_blank" rel="noopener noreferrer" aria-label="Buy me a coffee" style="display:block;padding:0;border:0;background:transparent"><img src="https://cdn.buymeacoffee.com/buttons/v2/default-yellow.png" alt="Buy Me A Coffee" width="130" style="display:block;width:130px;height:auto"></a>
 <div id="score">0</div>
 <div id="caption"></div>
 
@@ -1430,7 +1430,7 @@ function action(){
   else if (state === 'dead' && sinceDead > 0.35) restart();
 }
 addEventListener('pointerdown', e => {
-  if (e.target && e.target.closest && e.target.closest('#sndBtn')) return;
+  if (e.target && e.target.closest && e.target.closest('#sndBtn, #supportLink')) return;
   audio.ensure();
   action();
 });
